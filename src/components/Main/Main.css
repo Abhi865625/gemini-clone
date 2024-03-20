@@ -177,21 +177,4 @@
   line-height: 1.8;
 }
 
-@media (max-width: 600px) {
-  .main__bottom {
-    bottom: -20px;
-  }
-  .main__bottom input {
-    flex: none;
-    width: 150px;
-  }
-  .main__bottom img {
-    width: 20px;
-  }
-  .searchbox {
-    padding: 5px 10px;
-  }
-  .searchbox div {
-    gap: 5px;
-  }
-}
+
