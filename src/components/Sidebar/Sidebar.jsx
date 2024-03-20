@@ -28,18 +28,16 @@ const Sidebar = () => {
         {extended ? (
           <div className="recent">
             <p className="recent-title">Recent</p>
-            {prevPrompts.map((item, index) => {
-              return (
-                <div
-                  onClick={() => loadPrompt(item)}
-                  className="recent-entry"
-                  key={index}
-                >
-                  <img src={assets.message_icon} alt="msg" />
-                  <p>{item.slice(0, 18)}...</p>
-                </div>
-              );
-            })}
+            {prevPrompts.map((item, index) => (
+              <div
+                onClick={() => loadPrompt(item)}
+                className="recent-entry"
+                key={index}
+              >
+                <img src={assets.message_icon} alt="msg" />
+                <p>{item.slice(0, 18)}...</p>
+              </div>
+            ))}
           </div>
         ) : null}
       </div>
